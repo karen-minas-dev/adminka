@@ -1,0 +1,26 @@
+<!-- Main Header -->
+<header class="main-header">
+	<!-- Logo -->
+	<div class="logo"> <!-- mini logo for sidebar mini 50x50 pixels -->
+		<span class="logo-mini"><b>A</b>LT</span> <!-- logo for regular state and mobile devices -->
+		<span class="logo-lg"><b>Admin</b>PB</span>
+	</div>
+	<!-- Header Navbar -->
+	<nav class="navbar navbar-static-top" role="navigation">
+		<!-- Sidebar toggle button-->
+		<a href="#" class="sidebar-toggle" data-toggle="offcanvas"
+			role="button"> <span class="sr-only">Toggle navigation</span>
+		</a>
+		<!-- Navbar Right Menu -->
+		<div class="navbar-custom-menu">
+			<ul class="nav navbar-nav" *ngIf="auth.userLoggedIn">
+				<!-- Notifications Menu -->
+				<li class="dropdown notifications-menu notificationsBox"></li>
+				<li><a (click)="logout()" class="btn btn-link btn-flat"><i class="fa fa-sign-out"></i>Sign out</a></li>
+			</ul>
+			<!--<ul class="nav navbar-nav" *ngIf="!auth.userLoggedIn">
+				<li><a  [routerLink]="['/login']" ><i class="fa fa-sign-in"></i> Login</a></li>
+			</ul>-->
+		</div>
+	</nav>
+</header>

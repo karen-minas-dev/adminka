@@ -1,0 +1,43 @@
+<!-- Left col -->
+<div class="col-md-12">
+  <!-- MAP & BOX PANE -->
+  <div class="box box-success">
+    <div class="box-header with-border">
+      <h3 class="box-title">Visitors Report</h3>
+
+      <div class="box-tools pull-right">
+        <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+        </button>
+        <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+      </div>
+    </div>
+    <!-- /.box-header -->
+    <div class="box-body no-padding">
+      <div class="row">
+        <div class="col-md-9 col-sm-8">
+          <div class="pad">
+            <!-- Map will be created here -->
+            <div id="world-map-markers" class="world_map_markers"></div>
+          </div>
+        </div>
+        <!-- /.col -->
+        <div class="col-md-3 col-sm-4">
+          <div class="pad box-pane-right bg-green">
+            <div class="description-block margin-bottom" *ngFor="let usersCount of userscount">
+              <div class="sparkbar pad" data-color="#fff">
+                <i class="ion-stats-bars larger"></i>
+              </div>
+              <h5 class="description-header">{{ usersCount.count }}</h5>
+              <span class="description-text">{{ usersCount.title }}</span>
+            </div>
+          </div>
+        </div>
+        <!-- /.col -->
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.box-body -->
+  </div>
+  <!-- /.box -->
+</div>
+<!-- /.col -->

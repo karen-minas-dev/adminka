@@ -1,0 +1,10 @@
+{
+	"user_found":            {"code": 500, "message": "Նման օգտվող կա"},
+	"username_is_required":  {"code": 401, "message": "Username is required"},
+	"admin_is_required":     {"code": 401, "message": "Admin is required"},
+	"password_is_required":	 {"code": 401, "message": "Password is required"},
+	"id_and_token_required": {"code": 401, "message": "User ID and Token is required"},
+	"user_not_found":				 {"code": 404, "message": "User not found"},
+	"users_not_found":       {"code": 404, "message": "Users not found"},
+	"session_expired":       {"code": 555, "message": "Session expired"}
+}

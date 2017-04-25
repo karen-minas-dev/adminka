@@ -1,0 +1,31 @@
+{
+  "API_VERSIONS":["v1"],
+  "port": "3000",
+  "domain": "localhost",
+  "log-level": "dev",
+  "app-view": "views",
+  "app-engine": "ejs",
+  "app-static": "public",
+  "db-cnn": "mongodb://localhost/pingbing",
+  "session": {
+    "secret": "ki#Ko#$d5sah*n3N1V#lM28!7$t1Q",
+    "saveUninitialized":true,
+    "resave":false,
+    "key": "NDS",
+    "cookie": {
+      "path": "/",
+      "maxAge": null,
+      "httpOnly": true
+    }
+  },
+  "users-images": "/public/uploads/users",
+  "email": {
+    "service": "Yandex",
+    "auth": {
+      "user": "voskanvoskanyan@yandex.ru",
+      "pass": "19891213voskan"
+    },
+    "from": "voskanvoskanyan@yandex.ru",
+    "subject": "Forgot Password - PingBing"
+  }
+}
